@@ -25,7 +25,7 @@
 
 .tagline {
   font-size: 0.95rem;
-  color: #aaa;
+  color: #fff;
   margin-top: 8px;
 }
 
@@ -58,7 +58,7 @@
   text-align: center;
   margin-top: 40px;
   font-size: 0.85rem;
-  color: #777;
+  color: #fff;
   border-top: 1px solid #333;
   padding-top: 16px;
 }
