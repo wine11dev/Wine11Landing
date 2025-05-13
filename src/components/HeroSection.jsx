@@ -22,7 +22,6 @@ const HeroSection = () => {
         "https://script.google.com/macros/s/AKfycbzvNP5r9QKrYReIGfOWDBXVNnOu5yGveMNtP7HbPSMsnyfubaoPkVpnWpFxMPgdkmyjWA/exec",
         {
           method: "POST",
-          mode: "cors",
           headers: {
             "Content-Type": "application/x-www-form-urlencoded",
           },
