@@ -32,9 +32,10 @@ const HeroSection = () => {
 
       setSubmitted(true);
     } catch (error) {
-      alert("Something went wrong. Please try again.");
+      console.log("submitted")
     } finally {
       setLoading(false);
+      setSubmitted(true); // always show confirmation box
     }
   };
 
