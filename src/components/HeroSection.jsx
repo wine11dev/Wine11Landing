@@ -73,7 +73,7 @@ const HeroSection = () => {
           />
         </div>
 
-        <button onClick={handleSubmit}>Call Wine-1-1</button>
+        <button onClick={handleSubmit}>Join Wine-1-1 Waitlist</button>
       </div>
     ) : (
       <div className="confirmation-box">
