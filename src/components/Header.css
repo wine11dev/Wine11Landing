@@ -1,101 +1,68 @@
-/* Main header layout */
+/* Full-width red bar */
 .header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: #c8211d;
-    color: white;
-    padding: 15px 20px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  }
-  
-  /* Flex container */
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  /* Logo section */
-  .logo {
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    font-size: 1.2rem;
-  }
-  
-  .logo img {
-    height: 24px;
-    margin-right: 8px;
-  }
-  
-  /* Desktop nav */
-  .nav {
-    display: flex;
-    gap: 24px;
-  }
-  
-  .nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  
-  /* Hamburger icon */
-  .menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
-  }
-  
-  .menu-toggle .bar {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-  }
-  
-  @media (max-width: 768px) {
-    .nav {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 60px;             /* Pushes below header */
-      right: 16px;           /* Aligns to hamburger */
-      background-color: #c8211d;
-      padding: 16px;
-      border-radius: 16px;
-      gap: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      z-index: 1000;
-      width: 180px;
-    }
-  
-    .nav.active {
-      display: flex;
-    }
-  
-    .nav a {
-      color: white;
-      text-decoration: none;
-      font-size: 1rem;
-      font-weight: 500;
-    }
-  
-    .menu-toggle {
-      display: flex;
-    }
-  }
-.menu-toggle {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-  position: relative;
-  z-index: 1001; /* Ensure it's above the menu */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #c8211d;
+  color: white;
+  width: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
-  
-  
+
+/* Internal max-width layout */
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px; /* 👈 controls left/right spacing */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+
+/* Logo */
+.logo img {
+  height: 36px;
+}
+
+/* Nav */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.nav a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Mobile stacking */
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px; /* ↓ smaller gap for mobile */
+  }
+
+  .nav a {
+    font-size: 0.9rem; /* ↓ slightly smaller text */
+    padding: 6px 8px;
+  }
+}

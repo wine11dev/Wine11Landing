@@ -1,0 +1,40 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 24px;
+    text-align: center;
+  }
+  
+  .footer-logo img {
+    height: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo nav {
+    margin-top: 10px;
+  }
+  
+  .footer-logo nav a {
+    margin: 0 10px;
+    color: yellow;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+  }
+  
+  .footer-bottom a {
+    color: #fff;
+    margin-left: 16px;
+    text-decoration: underline;
+  }
+  

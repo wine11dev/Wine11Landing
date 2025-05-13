@@ -1,0 +1,23 @@
+.announcement-bar {
+    position: sticky;
+    top: 0;
+    z-index: 1001; /* Above header */
+    background-color: #fefe54;
+    color: #000000;
+    font-weight: 500;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.95rem;
+
+
+
+  }
+
+  .announcement-bar button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }

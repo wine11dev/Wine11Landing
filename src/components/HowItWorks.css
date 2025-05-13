@@ -1,66 +1,67 @@
 .how-it-works {
-    padding: 60px 24px;
-    text-align: center;
-    border-top: 2px solid #6a0dad;
-    border-bottom: 2px solid #6a0dad;
-    background: #fff;
-  }
+  padding: 60px 24px;
+  text-align: center;
   
-  .how-it-works h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 40px;
-  }
-  
-  .steps {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-  }
-  
-  .step {
-    max-width: 260px;
-  }
-  
-  .step img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
-  
-  .step h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-  }
-  
-  .step-number {
-    border: 1px solid black;
-    border-radius: 50%;
-    padding: 3px 9px;
-    font-size: 0.9rem;
-  }
-  
-  .step p {
-    font-size: 1rem;
-    line-height: 1.4;
-  }
-  
+}
 
-  .steps {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-  }
-  
-  .step {
-    flex: 1 1 260px;
-    max-width: 300px;
-    text-align: center;
-  }
-  
+.how-it-works h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.step {
+  flex: 1 1 260px;
+  max-width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.step h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.step-number {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  background-color: #c8211d; /* Default red */
+  color: white;
+}
+
+
+.step p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555; /* Softer than black */
+  margin-top: 8px;
+  max-width: 260px;
+  margin-inline: auto;
+  font-weight: 400;
+}
