@@ -44,7 +44,7 @@ const HeroSection = () => {
       <div className="container">
         <div className="hero-content">
   <div className="hero-left">
-  <h1>Get your drink<br />delivered now</h1>
+  <h1>Get Your Drink<br />Delivered Now</h1>
 
   <div className="hero-form-wrapper">
     {loading ? (
